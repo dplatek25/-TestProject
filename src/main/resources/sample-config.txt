@@ -1,0 +1,97 @@
+set {MEDVIEW_LISTENER_PORT}=5555
+
+set {DATABASE_PORT}=5433
+
+set {MEDVIEW_SERVICE_PAYARA_PORT_HTTP}=5081
+
+set {MEDVIEW_SERVICE_PAYARA_PORT_HTTPS}=5082
+
+set {MEDVIEW_SERVICE_PAYARA_PORT_ADMIN}=5049
+
+set {MEDVIEW_SERVICE_PAYARA_IIOP_SSL_LISTENER_PORT}=5820
+
+set {MEDVIEW_SERVICE_PAYARA_IIOP_SSL_MUTUALAUTH_PORT}=5920
+
+set {MEDVIEW_SERVICE_PAYARA_OSGI_SHELL_TELNET_PORT}=5667
+
+set {MEDVIEW_SERVICE_PAYARA_JAVA_DEBUGGER_PORT}=5009
+
+set {MEDVIEW_SERVICE_PAYARA_HZ_LISTENER_PORT}=5900
+
+set {MEDVIEW_SERVICE_MEDDREAM_PORT_HTTP}=81
+
+set {MEDVIEW_SERVICE_MEDDREAM_PORT_HTTPS}=82
+
+set {MEDVIEW_SERVICE_MEDDREAM_PORT_HTTPS}=4901
+
+set {MEDVIEW_SERVICE_PAYARA_JMX_SYSTEM_CONNECTOR_PORT}=5687
+
+set {MEDVIEW_SERVICE_PAYARA_IIOP_LISTENER_PORT}=5701
+
+set {MEDVIEW_SERVICE_PAYARA_OSGI_TELNET_PORT}=6677
+
+set {MEDDREAM_LISTENER_PORT}=11116
+
+set {MEDVIEW_DRIVE}=V
+
+set {MEDVIEW_HOST}=127.0.0.1
+
+set {MEDVIEW_LISTENER_AETITLE}=medview
+
+set {MEDVIEW_LISTENER_HOST}=0.0.0.0
+
+set {DATABASE}=medview
+
+set {DATABASE_HOST}=localhost
+
+set {DATABASE_USER}=postgres
+
+set {DATABASE_PASSWORD}=postgres
+
+set {DATABASE_SCHEMA}=dbo
+
+set {MEDVIEW_SERVICE_PAYARA}=MEDVIEWPayara
+
+set {MEDVIEW_SERVICE_POSTGRES}=MEDVIEWPostgreSQL
+
+set {MEDVIEW_SERVICE_MEDDREAM}=MEDVIEWMedDream
+
+set {MEDDREAM_USER}=user
+
+set {MEDDREAM_PASS}=1234
+
+set {MEDDREAM_LISTENER_AETITLE}=MEDDREAM
+
+set {MEDDREAM_LISTENER_HOST}=0.0.0.0
+
+set {MEDVIEW_USER}=admin
+
+set {MEDVIEW_USER_PASSWORD}=a
+
+set {MEDVIEW_USER_PASSWORD_SHA}=86f7e437faa5a7fce15d1ddcb9eaeaea377667b8
+
+set {APPLICATION_PID}=4608
+
+set {MEDVIEW_INSTALL_PATH}=V:\MEDVIEW_1.18_INSTALL_RC5
+
+set {MEDVIEW_INSTALL_FOLDER}=V:\medview\medview-application\medview-install\
+
+set {CONFIG_FILE_1_B}=V:\medview\medview-application\medview-install\domain.xml
+
+set {CONFIG_FILE_2_B}=V:\medview\medview-application\medview-install\postgresql.conf
+
+set {CONFIG_FILE_3_B}=V:\medview\medview-application\medview-install\application.properties
+
+set {CONFIG_FILE_4_B}=V:\medview\medview-application\medview-install\pg_env.bat
+
+set {CONFIG_FILE_5_B}=V:\medview\medview-application\medview-install\asenv.bat
+
+set {CONFIG_FILE_1_C}=V:\MEDVIEW\payara5\glassfish\domains\MEDVIEWPayara\config\domain.xml
+
+set {CONFIG_FILE_2_C}=V:\MEDVIEW\medview-postgresql\bin\data\postgresql.conf
+
+set {CONFIG_FILE_3_C}=V:\MEDVIEW\medview-mdpack\MedDream\application.properties
+
+set {CONFIG_FILE_4_C}=V:\MEDVIEW\medview-postgresql\pg_env.bat
+
+set {CONFIG_FILE_5_C}=V:\MEDVIEW\payara5\glassfish\config\asenv.bat
