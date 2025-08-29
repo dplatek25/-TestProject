@@ -15,4 +15,19 @@ class E2EServicePayaraTest extends AbstractCore {
         boolean result = loadsConfigAndChecksService("MEDVIEW_SERVICE_PAYARA");
         assertTrue(result, "Usługa MEDVIEW_SERVICE_PAYARA powinna być uruchomiona.");
     }
+
+    @Test
+    void checkPayaraHttpPort() {
+        int port = Integer.parseInt(findSettings("MEDVIEW_SERVICE_PAYARA_PORT_HTTP"));
+        boolean busy = isPortInUse(port);
+        assertTrue(busy, "Port HTTP " + port + " powinien być zajęty przez Payarę.");
+    }
+
+    @Test
+    void checkPayaraHttpsPort() {
+        int port = Integer.parseInt(findSettings("MEDVIEW_SERVICE_PAYARA_PORT_HTTPS"));
+        boolean busy = isPortInUse(port);
+        assertTrue(busy, "Port HTTPS " + port + " powinien być zajęty przez Payarę.");
+    }
+
 }
