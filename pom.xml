@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!-- JUnit 5 (API + Engine) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -25,7 +24,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- PostgreSQL JDBC driver (do testów JDBC) -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -36,7 +34,6 @@
 
     <build>
         <plugins>
-            <!-- Kompilacja pod Java 17 -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -46,13 +43,11 @@
                 </configuration>
             </plugin>
 
-            <!-- Uruchamianie testów (JUnit Platform) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
-                    <!-- czasem pomaga przy miksie modułów/JDK -->
                     <useModulePath>false</useModulePath>
                 </configuration>
             </plugin>
