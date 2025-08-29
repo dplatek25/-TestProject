@@ -120,4 +120,13 @@ public abstract class AbstractCore {
 
         return true;
     }
+
+    protected boolean isPortInUse(int port) {
+        try (java.net.Socket socket = new java.net.Socket("127.0.0.1", port)) {
+            return true; // udało się połączyć → port zajęty
+        } catch (IOException e) {
+            return false; // błąd połączenia → port wolny
+        }
+    }
+
 }

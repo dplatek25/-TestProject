@@ -21,4 +21,19 @@ public class E2EServiceMeddreamTest extends AbstractCore {
         boolean running = loadsConfigAndChecksService("MEDVIEW_SERVICE_MEDDREAM");
         assertTrue(running, "Usługa MEDVIEW_SERVICE_MEDDREAM powinna być uruchomiona.");
     }
+
+    @Test
+    void checkMeddreamHttpPort() {
+        int port = Integer.parseInt(findSettings("MEDVIEW_SERVICE_MEDDREAM_PORT_HTTP"));
+        boolean busy = isPortInUse(port);
+        assertTrue(busy, "Port HTTP " + port + " powinien być zajęty przez usługę MedDream.");
+    }
+
+    @Test
+    void checkMeddreamHttpsPort() {
+        int port = Integer.parseInt(findSettings("MEDVIEW_SERVICE_MEDDREAM_PORT_HTTPS"));
+        boolean busy = isPortInUse(port);
+        assertTrue(busy, "Port HTTPS " + port + " powinien być zajęty przez usługę MedDream.");
+    }
+
 }
